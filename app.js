@@ -1,6 +1,6 @@
 'use strict';
 /////////////////////////////////////
-
+//PROBLEM 1 SOLVED
 //"The sum of 4 and 7 is 11."
 
 //Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
@@ -55,6 +55,9 @@ function sumAndMultiply(a, b, c) {
   return [sum3[0], multiply3[0], string1, string2];
 }
 
+console.log(sumAndMultiply(4,7,5));
+testSumAndMultiply(4, 7, 5);
+
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -81,7 +84,7 @@ testSumArray(testArray);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
-/* Problem 5
+/* Problem 5 SOLVED
 Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
 "The numbers 2,3,4 have a product of 24."
@@ -92,11 +95,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
-}
+  var arrayProduct = (multiply(multiply(testArray[0], testArray[1])[0], testArray[2])[0]);
+  console.log(arrayProduct);
+  return [arrayProduct, 'The numbers ' + testArray + ' have a product of ' + arrayProduct + '.']; //eslint-disable-line
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
